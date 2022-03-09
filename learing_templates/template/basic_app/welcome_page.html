@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app\base.html" %}
+{% load my_extra_templatetags %}
+
+    {% block content_2 %}
+    <h1>This is from welcome_page.html</h1>
+    <h1>{{text|replace_space_with_x}}</h1>
+    <h1>{{number|x:5}}</h1>
+    {% endblock %}
